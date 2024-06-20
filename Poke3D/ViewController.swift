@@ -38,7 +38,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             configuration.detectionImages = imageToTrack
             
-            configuration.maximumNumberOfTrackedImages = 3
+            configuration.maximumNumberOfTrackedImages = 1
             
             print("Images Successfully Added")
             
@@ -88,7 +88,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                     }
                 }
             }
-            
+
             if imageAnchor.referenceImage.name == "oddish-card" {
                 if let pokeScene = SCNScene(named: "art.scnassets/oddish.scn") {
                     
@@ -100,16 +100,27 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 }
             }
             
-            if imageAnchor.referenceImage.name == "roy" {
-                if let pokeScene = SCNScene(named: "art.scnassets/roy.scn") {
-                    
-                    if let pokeNode = pokeScene.rootNode.childNodes.first {
-                        
-                        planeNode.addChildNode(pokeNode)
-                        
-                    }
-                }
-            }
+//            if imageAnchor.referenceImage.name == "roy" {
+//                if let pokeScene = SCNScene(named: "art.scnassets/BillyRoyTalks.scn") {
+//                    
+//                    if let pokeNode = pokeScene.rootNode.childNodes.first {
+//                        
+//                        planeNode.addChildNode(pokeNode)
+//                        
+//                    }
+//                }
+//            }
+//            
+//            if imageAnchor.referenceImage.name == "newBilly" {
+//                if let pokeScene = SCNScene(named: "art.scnassets/billyRoyTalk.scn") {
+//                    
+//                    if let pokeNode = pokeScene.rootNode.childNodes.first {
+//                        
+//                        planeNode.addChildNode(pokeNode)
+//                        
+//                    }
+//                }
+//            }
             
         }
         //We return the node "3D Object"

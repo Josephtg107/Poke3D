@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "newBilly.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "width" : 0.91388000000000003
+  }
+}
